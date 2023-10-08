@@ -1,11 +1,3 @@
-<!--
----
-layout: default
-title: Home
-permalink: /
----
--->
+# Home
 
-# Welcome to My Custom Homepage
-
-This is the content of my custom homepage.
+This is the content of my home page.
