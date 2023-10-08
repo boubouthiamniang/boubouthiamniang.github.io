@@ -1,3 +1,3 @@
-# Welcome to My teaching page 
+# Teaching
 
 This is the content of my teaching page.
