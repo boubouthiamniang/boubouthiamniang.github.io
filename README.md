@@ -1,4 +1,4 @@
-# PhD candidat in coputer science
+# About
 My name is Boubou Thiam Niang. I am a PhD student in the Decision and Information for Production Systems (DISP) laboratory and Berger-Levrault company. My thesis concerns interoperability solutions to support scalable and maintainable System-of-System (SoS). The proposed approach relies on Software Product Line engineering following Delta Oriented Programming (DOP) and Model-Driven engineering (MDE).
 
 ## Work experience
@@ -23,5 +23,19 @@ Web programming for data visualization
 ### Groupe Charle André
 Analyst developper, Sept 2017 - Oct. 2020 
 ## Education 
+### Universite Lumière Lyon 2
+Since Oct. 2020
+PhD. candidat in computer science
 
+### Polytech'Montpellier
+2014 - 2017 
+Electronics and industrial computing
+
+### Licensing program
+2013 - 2014 
+Licensing program - Sciences for engineers
+
+### Licensing program
+2011 - 2013 
+Licensing program - Mathematics - Physics
 
