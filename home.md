@@ -1,3 +1,2 @@
-layout: page
-title: "Home"
-permalink: /home
+#Home 
+Welcome on my web site 
