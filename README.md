@@ -1,7 +1,7 @@
 # About
 My name is Boubou Thiam Niang. I am a PhD student in the Decision and Information for Production Systems (DISP) laboratory and Berger-Levrault company. My thesis concerns interoperability solutions to support scalable and maintainable System-of-System (SoS). The proposed approach relies on Software Product Line engineering following Delta Oriented Programming (DOP) and Model-Driven engineering (MDE).
 
-- [About](/about): Find out more about my background and interests.
+- [Home](/home): Find out more about my background and interests.
 - [Experience](/experience): Explore my professional experience and achievements.
 - [Teaching](/teaching): Learn about my teaching philosophy and courses.
 - [Project](/project): Learn about my projects.
