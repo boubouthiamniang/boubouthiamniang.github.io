@@ -1,5 +1,5 @@
 # PhD candidat in computer science
-[Home](/home)
+[About](/home)
 [Experience](/experience)
 [Teaching](/teaching)
 [Project](/project)
