@@ -1,4 +1,3 @@
-# PhD candidat in computer science
 [About](/about)
 [Experience](/experience)
 [Teaching](/teaching)
