@@ -1,0 +1,16 @@
+- title: About
+  url: /about/
+- title: Experience
+  url: /Experience/
+- title: Teaching
+  url: /teaching/
+- title: Blog
+  url: /blog/
+- title: Contact
+  url: /contact/
+- title: More
+  sublinks:
+    - title: FAQ
+      url: /faq/
+    - title: Docs
+      url: /docs/
