@@ -1,6 +1,12 @@
-title: Home
+title: Boubou Thiam Niang
 description: Bookmark this to keep an eye on my project updates!
 plugins:
   - jekyll-remote-theme
-
 remote_theme: ngzhio/jekyll-theme-hamilton
+
+- title: About
+  url: /about/
+- title: Categories
+  url: /categories/
+- title: Tags
+  url: /tags/
