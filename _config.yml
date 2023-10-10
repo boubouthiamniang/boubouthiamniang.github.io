@@ -2,7 +2,7 @@ title: Boubou Thiam Niang
 description: Updated on October 10, 2023
 plugins:
   - jekyll-remote-theme
-remote_theme: ngzhio/jekyll-theme-hamilton
+remote_theme: mmistakes/minimal-mistakes
 author: Boubou Thiam Niang
 avatar: profil_resized.jpg
 email: 	boubouniang@yahoo.fr
