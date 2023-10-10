@@ -1,6 +1,14 @@
+- title: Orcid
+  url: https://orcid.org/0000-0002-8618-1740
+  icon: fab fa-orcid
+- title: Scholar
+  url: https://scholar.google.com/citations?user=lKCyMF8AAAAJ&hl=fr
+  icon: fab fa-scholar
 - title: Twitter
   url: https://twitter.com/boubou_niang
   icon: fab fa-twitter
 - title: GitHub
   url: https://github.com/boubouthiamniang
   icon: fab fa-github
+
+  
