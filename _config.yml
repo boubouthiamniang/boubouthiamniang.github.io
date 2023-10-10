@@ -3,4 +3,12 @@ description: Bookmark this to keep an eye on my project updates!
 plugins:
   - jekyll-remote-theme
 remote_theme: ngzhio/jekyll-theme-hamilton
-
+author: Boubou Thiam Niang
+avatar: 	string 	The avatar of the author of the site.
+email: 	boubouniang@yahoo.fr
+location: France
+skin: midnight
+lang: en
+paginate: 1
+date_format: %b %-d, %Y
+subscribe: false
