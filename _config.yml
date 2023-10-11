@@ -1,5 +1,8 @@
 title: Boubou Thiam Niang
 description: Updated on October 10, 2023
+url: https://github.com/boubouthiamniang/boubouthiamniang.github.io
+baseurl: ''
+paginate: 1
 plugins:
   - jekyll-remote-theme
 remote_theme: ngzhio/jekyll-theme-hamilton
