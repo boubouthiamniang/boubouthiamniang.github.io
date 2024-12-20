@@ -1,0 +1,41 @@
+.education {
+    margin-bottom: 40px;
+}
+
+.education ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.education ul li {
+    flex: 1 1 calc(50% - 10px); /* Each item takes up 50% of the container width */
+    background-color: #fff;
+    padding: 15px;
+    margin: 5px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.education ul li:hover {
+    transform: translateY(-5px);
+}
+
+.education ul li strong {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .education ul {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .education ul li {
+        flex: 1 1 100%; /* Each item takes up 100% of the container width on mobile */
+    }
+}

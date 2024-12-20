@@ -1,0 +1,98 @@
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #161b22; /* Dark background to match the page theme */
+  color: #c9d1d9; /* Soft white text */
+  border-bottom: 2px solid #30363d; /* Subtle bottom border */
+}
+
+/* Header Content */
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap; /* Wrap content on smaller screens */
+}
+
+/* Branding Section */
+.branding {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 15px; /* Space between avatar and text */
+  border: 2px solid #58a6ff; /* Add a glowing border */
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.avatar:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 12px #58a6ff;
+}
+
+.branding h1 {
+  font-size: 24px;
+  margin: 0;
+  color: #58a6ff; /* Neon blue for the name */
+}
+
+.branding h2 {
+  font-size: 16px;
+  margin: 0;
+  color: #8b949e; /* Muted color for the subtitle */
+}
+
+/* Navigation Bar */
+.nav-bar ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar li {
+  margin-right: 20px; /* Space between menu items */
+}
+
+.nav-bar li:last-child {
+  margin-right: 0; /* Remove margin from the last item */
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: #c9d1d9;
+  font-size: 16px;
+  padding: 10px 15px;
+  transition: background-color 0.2s, color 0.2s, transform 0.2s;
+  border-radius: 5px;
+}
+
+.nav-bar a:hover {
+  background-color: #58a6ff; /* Neon blue hover effect */
+  color: #0d1117; /* Dark text on hover */
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .nav-bar ul {
+    flex-direction: column; /* Stack menu items vertically */
+    align-items: flex-start;
+  }
+
+  .nav-bar li {
+    margin-bottom: 10px; /* Add space between stacked items */
+  }
+
+  .nav-bar li:last-child {
+    margin-bottom: 0;
+  }
+}

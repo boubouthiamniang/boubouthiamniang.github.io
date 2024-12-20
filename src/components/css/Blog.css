@@ -1,0 +1,101 @@
+/* Container for the blog section */
+.blog {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+/* Blog section title */
+.blog h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Blog list container */
+.blog ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    list-style-type: none;
+}
+
+/* Individual blog items */
+.blog ul li {
+    flex: 1 1 calc(50% - 10px); /* 50% width for each item */
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for blog items */
+.blog ul li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Title of each blog */
+.blog ul li strong {
+    font-size: 1.3rem;
+    display: block;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+/* blog description */
+.blog ul li p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+
+/* For mobile devices */
+@media (max-width: 768px) {
+    .blog ul {
+        flex-direction: column;
+    }
+
+    .blog ul li {
+        flex: 1 1 100%; /* Full width on small screens */
+        margin-bottom: 20px;
+    }
+
+    .blog h2 {
+        font-size: 1.8rem;
+    }
+
+    .blog ul li strong {
+        font-size: 1.2rem;
+    }
+
+    .blog ul li p {
+        font-size: 0.9rem;
+    }
+}
+
+/* For tablets and medium devices */
+@media (max-width: 1024px) {
+    .blog ul li {
+        flex: 1 1 calc(100% - 20px); /* Full width with margin for medium screens */
+    }
+
+    .blog h2 {
+        font-size: 1.9rem;
+    }
+
+    .blog ul li strong {
+        font-size: 1.2rem;
+    }
+
+    .blog ul li p {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,101 @@
+/* Container for the Research section */
+.research {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+/* Research section title */
+.research h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Research list container */
+.research ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    list-style-type: none;
+}
+
+/* Individual research items */
+.research ul li {
+    flex: 1 1 calc(50% - 10px); /* 50% width for each item */
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for research items */
+.research ul li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Title of each blog */
+.research ul li strong {
+    font-size: 1.3rem;
+    display: block;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+/* research description */
+.research ul li p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+
+/* For mobile devices */
+@media (max-width: 768px) {
+    .research ul {
+        flex-direction: column;
+    }
+
+    .research ul li {
+        flex: 1 1 100%; /* Full width on small screens */
+        margin-bottom: 20px;
+    }
+
+    .research h2 {
+        font-size: 1.8rem;
+    }
+
+    .research ul li strong {
+        font-size: 1.2rem;
+    }
+
+    .research ul li p {
+        font-size: 0.9rem;
+    }
+}
+
+/* For tablets and medium devices */
+@media (max-width: 1024px) {
+    .research ul li {
+        flex: 1 1 calc(100% - 20px); /* Full width with margin for medium screens */
+    }
+
+    .research h2 {
+        font-size: 1.9rem;
+    }
+
+    .research ul li strong {
+        font-size: 1.2rem;
+    }
+
+    .research ul li p {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,42 @@
+.about {
+    background-color: #161b22; /* Dark theme background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    margin-bottom: 40px;
+    color: #c9d1d9; /* Soft white text */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.about:hover {
+    transform: scale(1.02); /* Slight zoom effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
+}
+
+.about h2 {
+    font-size: 2rem;
+    color: #58a6ff; /* Neon blue for heading */
+    margin-bottom: 15px;
+    text-shadow: 0 0 8px #58a6ff; /* Glow effect */
+}
+
+.about p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #8b949e; /* Muted text for readability */
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .about {
+        padding: 15px;
+    }
+
+    .about h2 {
+        font-size: 1.5rem;
+    }
+
+    .about p {
+        font-size: 1rem;
+    }
+}

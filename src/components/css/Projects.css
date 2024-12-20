@@ -1,0 +1,101 @@
+/* Container for the projects section */
+.projects {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+/* Projects section title */
+.projects h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Projects list container */
+.projects ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    list-style-type: none;
+}
+
+/* Individual project items */
+.projects ul li {
+    flex: 1 1 calc(50% - 10px); /* 50% width for each item */
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for project items */
+.projects ul li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Title of each project */
+.projects ul li strong {
+    font-size: 1.3rem;
+    display: block;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+/* Project description */
+.projects ul li p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+
+/* For mobile devices */
+@media (max-width: 768px) {
+    .projects ul {
+        flex-direction: column;
+    }
+
+    .projects ul li {
+        flex: 1 1 100%; /* Full width on small screens */
+        margin-bottom: 20px;
+    }
+
+    .projects h2 {
+        font-size: 1.8rem;
+    }
+
+    .projects ul li strong {
+        font-size: 1.2rem;
+    }
+
+    .projects ul li p {
+        font-size: 0.9rem;
+    }
+}
+
+/* For tablets and medium devices */
+@media (max-width: 1024px) {
+    .projects ul li {
+        flex: 1 1 calc(100% - 20px); /* Full width with margin for medium screens */
+    }
+
+    .projects h2 {
+        font-size: 1.9rem;
+    }
+
+    .projects ul li strong {
+        font-size: 1.2rem;
+    }
+
+    .projects ul li p {
+        font-size: 1rem;
+    }
+}
