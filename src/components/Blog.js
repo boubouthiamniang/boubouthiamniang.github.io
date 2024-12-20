@@ -7,13 +7,16 @@ const Blog = () => {
             <h2>Blog</h2>
             <ul>
                 <li>
-                    <strong>CI/CD pipelines: good software development practice, but green? </strong> (GitHub: [github.com/yourproject])<br />
-                    Contributed to an open-source framework for processing large-scale real-time data. Optimized data pipelines for better performance.
+                    <strong>CI/CD Pipelines: Good Software Development Practice, but Green?</strong><br />
+                    GitHub: <a href="https://github.com/yourproject" target="_blank" rel="noopener noreferrer">github.com/yourproject</a><br />
+                    Discussed the environmental impact of CI/CD pipelines and explored sustainable practices in software development.
                 </li>
                 <li>
-                    <strong>Model-Based Analysis and Comprehensive BRMS Migration: IBM ODM to Drools Case Study</strong> (GitHub: [github.com/iotblockchain])<br />
-                    Developed a lightweight blockchain protocol for secure IoT communications.
+                    <strong>Model-Based Analysis and Comprehensive BRMS Migration: IBM ODM to Drools Case Study</strong><br />
+                    GitHub: <a href="https://github.com/iotblockchain" target="_blank" rel="noopener noreferrer">github.com/iotblockchain</a><br />
+                    Explored the migration process from IBM ODM to Drools in a case study, focusing on model-based analysis and best practices.
                 </li>
+                {/* Add more blog entries as needed */}
             </ul>
         </section>
     );

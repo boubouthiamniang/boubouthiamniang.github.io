@@ -1,17 +1,15 @@
 /* Container for the projects section */
 .projects {
     margin-bottom: 40px;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
+    color: #c9d1d9; /* Soft white text */
 }
 
 /* Projects section title */
 .projects h2 {
-    text-align: center;
     font-size: 2rem;
-    color: #333;
+    color: #58a6ff; /* Neon blue for heading */
     margin-bottom: 20px;
+    text-shadow: 0 0 8px #58a6ff; /* Glow effect */
 }
 
 /* Projects list container */
@@ -20,38 +18,39 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0;
-    list-style-type: none;
+    margin: 0;
 }
 
 /* Individual project items */
 .projects ul li {
-    flex: 1 1 calc(50% - 10px); /* 50% width for each item */
-    background-color: #fff;
-    padding: 20px;
-    margin: 10px;
+    flex: 1 1 calc(50% - 10px); /* Each item takes up 50% of the container width */
+    background-color: #161b22; /* Dark background */
+    padding: 15px;
+    margin: 5px;
     border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #8b949e; /* Muted text for readability */
 }
 
 /* Hover effect for project items */
 .projects ul li:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
 }
 
 /* Title of each project */
 .projects ul li strong {
-    font-size: 1.3rem;
     display: block;
-    margin-bottom: 10px;
-    color: #444;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: #58a6ff; /* Neon blue for the titles */
 }
 
 /* Project description */
 .projects ul li p {
     font-size: 1rem;
-    color: #666;
+    color: #8b949e;
     line-height: 1.6;
 }
 
@@ -61,11 +60,11 @@
 @media (max-width: 768px) {
     .projects ul {
         flex-direction: column;
+        align-items: stretch;
     }
 
     .projects ul li {
-        flex: 1 1 100%; /* Full width on small screens */
-        margin-bottom: 20px;
+        flex: 1 1 100%; /* Each item takes up 100% of the container width on mobile */
     }
 
     .projects h2 {

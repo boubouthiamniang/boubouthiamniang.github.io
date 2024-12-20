@@ -7,11 +7,16 @@ const Teaching = () => {
             <h2>Teaching</h2>
             <ul>
                 <li>
-                    [Your Name], "Efficient Algorithms for Data Processing", *ACM Transactions on Software Engineering*, Year.
+                    <strong>Efficient Algorithms for Data Processing</strong><br />
+                    *ACM Transactions on Software Engineering*, Year<br />
+                    Taught students how to optimize data processing algorithms for real-time systems in distributed environments.
                 </li>
                 <li>
-                    [Your Name], "Blockchain for IoT Security", *IEEE Transactions on Computers*, Year.
+                    <strong>Blockchain for IoT Security</strong><br />
+                    *IEEE Transactions on Computers*, Year<br />
+                    Led a course on the use of blockchain technology for securing IoT devices and communications.
                 </li>
+                {/* Add more teaching entries as needed */}
             </ul>
         </section>
     );
