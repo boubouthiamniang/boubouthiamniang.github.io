@@ -1,11 +1,28 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { SiOrcid } from 'react-icons/si';
 import './css/Header.css';
-import avatar from '../assets/images/profil_rotate.jpg';  // Import the avatar image
+import avatar from '../assets/images/profil_rotate.jpg'; // Import the avatar image
 
 const Header = () => {
   return (
     <header className="header">
+      {/* Social Icons in Top-Right Corner */}
+      <div className="social-icons">
+        <a href="https://github.com/boubouthiamniang" target="_blank" rel="noopener noreferrer">
+          <FaGithub />
+        </a>
+        <a href="https://www.linkedin.com/in/boubou-thiam-niang-a89671a9/" target="_blank" rel="noopener noreferrer">
+          <FaLinkedin />
+        </a>
+        <a href="https://orcid.org/0000-0002-8618-1740" target="_blank" rel="noopener noreferrer">
+          <SiOrcid />
+        </a>
+        <a href="https://x.com/boubou_niang" target="_blank" rel="noopener noreferrer">
+          <FaTwitter />
+        </a>
+      </div>
       <div className="header-content">
         <div className="branding">
           {/* Avatar Image */}

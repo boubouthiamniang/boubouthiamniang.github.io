@@ -1,4 +1,6 @@
 /* src/App.css */
+
+/* General Body Styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -6,32 +8,157 @@ body {
   background-color: #f4f4f9;
 }
 
+/* App Container */
 .App {
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
 }
 
-header, section, footer {
-  margin-bottom: 30px;
+/* Universal Rounded Corners for Containers */
+.container, .card, header, section, footer {
+  border-radius: 12px; /* Rounded edges for all blocks */
+  overflow: hidden; /* Prevent content overflow */
+  margin-bottom: 20px; /* Add spacing between blocks */
 }
 
-h1, h2 {
-  color: #e0d9d9;
-  text-align: center;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #161b22;
+  color: #c9d1d9;
+  border-bottom: 2px solid #30363d;
   margin-bottom: 20px;
 }
 
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons a {
+  color: #c9d1d9;
+  font-size: 20px;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.social-icons a:hover {
+  color: #58a6ff;
+  transform: scale(1.2);
+}
+
+/* Branding Section */
+.branding {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%; /* Circular avatar */
+  margin-right: 15px;
+  border: 2px solid #58a6ff;
+}
+
+.branding h1 {
+  font-size: 24px;
+  color: #58a6ff;
+}
+
+.branding h2 {
+  font-size: 16px;
+  color: #8b949e;
+}
+
+/* Navigation Bar */
+.nav-bar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: #c9d1d9;
+  padding: 10px 15px;
+  border-radius: 8px; /* Smooth corners for nav links */
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.nav-bar a:hover {
+  background-color: #58a6ff;
+  color: #0d1117;
+  transform: scale(1.1);
+}
+
+/* Blog Section */
+.blog-post {
+  padding: 20px;
+  border-radius: 12px; /* Smooth edges */
+  background: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Form */
+.contact-form {
+  max-width: 600px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px; /* Smooth edges */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px; /* Smooth edges for inputs */
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #58a6ff;
+  color: #fff;
+  border: none;
+  border-radius: 8px; /* Smooth button edges */
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #0073e6;
+}
+
+/* Footer */
 .footer {
   text-align: center;
-  color: #777;
+  padding: 10px;
+  background-color: #161b22;
+  color: #c9d1d9;
   font-size: 0.9em;
+  border-radius: 12px 12px 0 0; /* Rounded top edges */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .App {
+    padding: 15px;
+  }
+
+  .nav-bar ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact-form {
+    padding: 15px;
+  }
 }

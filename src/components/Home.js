@@ -65,9 +65,9 @@ const Home = () => {
 
       {/* Call to Action */}
       <section className="cta">
-        <h2 className="neon-title">Let’s Collaborate!</h2>
+        <h2 className="neon-title">Let's be interoperable!</h2>
         <p>
-          Got a challenging project or idea? I’m always eager to collaborate on innovative endeavors.
+          Got a challenging project or idea? I'm always ready to collaborate on innovative projects.
         </p>
         <Link to="/contact" className="btn-primary glow">Reach Out</Link>
       </section>

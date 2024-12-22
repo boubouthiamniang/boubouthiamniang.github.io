@@ -7,6 +7,27 @@
   background-color: #161b22; /* Dark background to match the page theme */
   color: #c9d1d9; /* Soft white text */
   border-bottom: 2px solid #30363d; /* Subtle bottom border */
+  position: relative; /* Allow positioning of child elements */
+}
+
+/* Social Icons in Top-Right Corner */
+.social-icons {
+  position: absolute;
+  top: 10px; /* Distance from the top of the header */
+  right: 10px; /* Distance from the right of the header */
+  display: flex;
+  gap: 10px; /* Space between icons */
+}
+
+.social-icons a {
+  color: #c9d1d9; /* Default icon color */
+  font-size: 20px; /* Icon size */
+  transition: color 0.3s, transform 0.3s;
+}
+
+.social-icons a:hover {
+  color: #58a6ff; /* Neon blue hover effect */
+  transform: scale(1.2); /* Slight zoom effect */
 }
 
 /* Header Content */
@@ -22,6 +43,7 @@
 .branding {
   display: flex;
   align-items: center;
+  flex: 1; /* Allow branding to take up available space */
 }
 
 .avatar {
@@ -51,6 +73,10 @@
 }
 
 /* Navigation Bar */
+.nav-bar {
+  flex: 2; /* Navigation takes more space */
+}
+
 .nav-bar ul {
   list-style: none;
   display: flex;
