@@ -11,13 +11,13 @@
 
 /* Footer links */
 .footer p a {
-    color: #333;
+    color: #58a6ff; /* Neon blue color for links */
     text-decoration: none;
     font-weight: bold;
 }
 
 .footer p a:hover {
-    color: #555;
+    color: #4a90e2; /* Slightly darker blue when hovered */
     text-decoration: underline;
     transition: color 0.3s ease; /* Smooth color transition */
 }

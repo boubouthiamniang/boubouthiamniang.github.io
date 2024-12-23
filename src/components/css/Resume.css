@@ -1,0 +1,91 @@
+/* Container for the entire resume */
+.resume-container {
+    display: flex;
+    flex-direction: row; /* Arrange sections side by side */
+    gap: 20px; /* Space between columns */
+    margin-bottom: 40px;
+    padding: 20px;
+}
+
+/* Styling for both experience and education sections */
+.experience, .education {
+    flex: 1; /* Equal width for both columns */
+    padding: 0; /* Remove padding from the section */
+}
+
+/* Styling for section headings (titles) */
+.experience h2, .education h2 {
+    font-size: 2rem;
+    color: #58a6ff; /* Neon blue for heading */
+    margin-bottom: 10px; /* Reduced margin to make it closer to the list */
+    text-align: left; /* Align title to the left */
+}
+
+/* List styling for both experience and education */
+.experience ul, .education ul {
+    background-color: #0d1117; /* Deeper black for the list background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Stronger shadow for depth */
+    margin: 0;
+    list-style: none;
+}
+
+/* Styling for each list item */
+.experience ul li, .education ul li {
+    margin-bottom: 15px;
+    color: #c9d1d9; /* Slightly brighter muted text for better readability */
+    background-color: #161b22; /* Darker background for contrast */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect to lift each list item */
+.experience ul li:hover, .education ul li:hover {
+    transform: translateY(-5px); /* Move the block upwards */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* More pronounced shadow on hover */
+    background-color: #1c2128; /* Slightly lighter black on hover for depth */
+}
+
+/* Styling for the strong (institution/organization name) */
+.experience ul li strong, .education ul li strong {
+    display: block;
+    font-size: 1.2rem;
+    color: #58a6ff; /* Neon blue for titles */
+    margin-bottom: 5px;
+}
+
+/* Styling for the em (role/degree and duration) */
+.experience ul li em, .education ul li em {
+    font-style: normal;
+    color: #8b949e; /* Muted text for roles and durations */
+}
+
+/* Nested list indentation */
+.experience ul ul, .education ul ul {
+    padding-left: 20px; /* Indentation for nested lists */
+}
+
+/* Styling for nested list items */
+.experience ul ul li, .education ul ul li {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #8b949e; /* Sub-item muted text */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .resume-container {
+        flex-direction: column; /* Stack sections vertically on smaller screens */
+    }
+
+    .experience, .education {
+        flex: 1; /* Full width on smaller screens */
+    }
+
+    .experience ul li, .education ul li {
+        margin-bottom: 10px; /* Adjust the margin on smaller screens */
+    }
+}

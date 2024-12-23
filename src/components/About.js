@@ -1,9 +1,9 @@
 import React from 'react';
-import './css/Education.css'; // Reusing the Education CSS
+import './css/About.css'; // Reusing the Education CSS
 
 const About = () => {
     return (
-        <section className="education">
+        <section className="about">
             <h2>About Me</h2>
             <ul>
                 <li>

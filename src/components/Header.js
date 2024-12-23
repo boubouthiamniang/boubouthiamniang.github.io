@@ -28,7 +28,7 @@ const Header = () => {
           {/* Avatar Image */}
           <img
             src={avatar}
-            alt="Your Name"
+            alt="Boubou Thiam Niang"
             className="avatar"
           />
           <div>
@@ -40,7 +40,7 @@ const Header = () => {
           <ul>
             <li><Link to="/">Home</Link></li>
             <li><Link to="/about">About</Link></li>
-            <li><Link to="/education">Education</Link></li>
+            <li><Link to="/resume">Resume</Link></li>
             <li><Link to="/research">Research</Link></li>
             <li><Link to="/teaching">Teaching</Link></li>
             <li><Link to="/projects">Projects</Link></li>

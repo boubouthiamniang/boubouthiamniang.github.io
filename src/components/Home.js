@@ -36,9 +36,9 @@ const Home = () => {
           <Link to="/teaching" className="btn-secondary">Learn</Link>
         </div>
         <div className="highlight-card">
-          <h2>🎓 Education</h2>
-          <p>Trace my academic roots and certifications.</p>
-          <Link to="/education" className="btn-secondary">Check It Out</Link>
+          <h2>🎓 Resume</h2>
+          <p>Trace my academic roots, experiences and certifications.</p>
+          <Link to="/resume" className="btn-secondary">Check It Out</Link>
         </div>
         <div className="highlight-card">
           <h2>🔬 Projects</h2>
