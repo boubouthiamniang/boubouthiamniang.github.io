@@ -12,7 +12,7 @@ const Home = () => {
         <div className="hero-content">
           <h1 className="neon-title">Welcome to My Lab</h1>
           <p className="neon-text">
-            🚀 Pushing the boundaries of AI and distributed systems. Let’s bridge the gap between research and real-world impact.
+            🚀 Pushing the boundaries of software engineering through Interoperability, Green IT, and AI-driven code development to create sustainable and impactful solutions.
           </p>
           <Link to="/about" className="btn-primary glow">Dive In</Link>
         </div>
@@ -26,6 +26,11 @@ const Home = () => {
           <Link to="/about" className="btn-secondary">Explore</Link>
         </div>
         <div className="highlight-card">
+          <h2>🎓 Resume</h2>
+          <p>Trace my academic roots, experiences and certifications.</p>
+          <Link to="/resume" className="btn-secondary">Check It Out</Link>
+        </div>
+        <div className="highlight-card">
           <h2>📚 Research</h2>
           <p>Dive into my publications and research projects.</p>
           <Link to="/research" className="btn-secondary">Discover</Link>
@@ -36,13 +41,8 @@ const Home = () => {
           <Link to="/teaching" className="btn-secondary">Learn</Link>
         </div>
         <div className="highlight-card">
-          <h2>🎓 Resume</h2>
-          <p>Trace my academic roots, experiences and certifications.</p>
-          <Link to="/resume" className="btn-secondary">Check It Out</Link>
-        </div>
-        <div className="highlight-card">
           <h2>🔬 Projects</h2>
-          <p>Explore cutting-edge projects I’ve contributed to.</p>
+          <p>Discover the main projects I have contributed to.</p>
           <Link to="/projects" className="btn-secondary">See More</Link>
         </div>
         <div className="highlight-card">

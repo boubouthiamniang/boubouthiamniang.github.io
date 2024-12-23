@@ -80,39 +80,6 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Contact Form */
-.contact-form {
-  max-width: 600px;
-  margin: 20px auto;
-  background: #fff;
-  padding: 20px;
-  border-radius: 12px; /* Smooth edges */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ddd;
-  border-radius: 8px; /* Smooth edges for inputs */
-}
-
-.contact-form button {
-  width: 100%;
-  padding: 10px;
-  background-color: #58a6ff;
-  color: #fff;
-  border: none;
-  border-radius: 8px; /* Smooth button edges */
-  cursor: pointer;
-}
-
-.contact-form button:hover {
-  background-color: #0073e6;
-}
-
 /* Footer */
 .footer {
   text-align: center;
@@ -132,9 +99,5 @@ body {
   .nav-bar ul {
     flex-direction: column;
     align-items: flex-start;
-  }
-
-  .contact-form {
-    padding: 15px;
   }
 }
