@@ -1,18 +1,25 @@
-/* Container for the research section */
 .research {
     margin-bottom: 40px;
-    color: #c9d1d9; /* Soft white text */
+    color: #c9d1d9;
 }
 
-/* Research section title */
 .research h2 {
     font-size: 2rem;
-    color: #58a6ff; /* Neon blue for heading */
+    color: #58a6ff;
     margin-bottom: 20px;
-    text-shadow: 0 0 8px #58a6ff; /* Glow effect */
+    text-shadow: 0 0 8px #58a6ff;
 }
 
-/* Research list container */
+.category {
+    margin-bottom: 30px;
+}
+
+.category h3 {
+    font-size: 1.5rem;
+    color: #58a6ff;
+    margin-bottom: 10px;
+}
+
 .research ul {
     display: flex;
     flex-wrap: wrap;
@@ -21,42 +28,35 @@
     margin: 0;
 }
 
-/* Individual research items */
 .research ul li {
-    flex: 1 1 calc(50% - 10px); /* Each item takes up 50% of the container width */
-    background-color: #161b22; /* Dark background */
+    flex: 1 1 calc(50% - 10px);
+    background-color: #161b22;
     padding: 15px;
     margin: 5px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    color: #8b949e; /* Muted text for readability */
+    color: #8b949e;
 }
 
-/* Hover effect for research items */
 .research ul li:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 
-/* Title of each research item */
 .research ul li strong {
     display: block;
     font-size: 1.2rem;
     margin-bottom: 5px;
-    color: #58a6ff; /* Neon blue for the titles */
+    color: #58a6ff;
 }
 
-/* Research description */
 .research ul li p {
     font-size: 1rem;
     color: #8b949e;
     line-height: 1.6;
 }
 
-/* Responsive Design */
-
-/* For mobile devices */
 @media (max-width: 768px) {
     .research ul {
         flex-direction: column;
@@ -64,7 +64,7 @@
     }
 
     .research ul li {
-        flex: 1 1 100%; /* Each item takes up 100% of the container width on mobile */
+        flex: 1 1 100%;
     }
 
     .research h2 {
@@ -80,10 +80,9 @@
     }
 }
 
-/* For tablets and medium devices */
 @media (max-width: 1024px) {
     .research ul li {
-        flex: 1 1 calc(100% - 20px); /* Full width with margin for medium screens */
+        flex: 1 1 calc(100% - 20px);
     }
 
     .research h2 {
