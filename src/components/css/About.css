@@ -1,101 +1,66 @@
-/* About Section */
-.about {
+:root {
+    --primary-color: #58a6ff;
+    --background-color: #161b22;
+    --text-color: #c9d1d9;
+    --hover-shadow: rgba(0, 0, 0, 0.4);
+  }
+  
+  .about {
     margin-bottom: 40px;
-    color: #c9d1d9; /* Soft white text */
-}
-
-/* About section title */
-.about h2 {
-    font-size: 2rem;
-    color: #58a6ff; /* Neon blue for heading */
+    color: var(--text-color);
+  }
+  
+  .about h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
     margin-bottom: 20px;
-    text-shadow: 0 0 8px #58a6ff; /* Glow effect */
-    text-align: left; /* Align title to the left */
-}
-
-/* About content container */
-.about ul {
+    text-shadow: 0 0 8px var(--primary-color);
+    text-align: left;
+  }
+  
+  .about ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0;
     margin: 0;
-}
-
-/* Individual about items (like a list of points) */
-.about ul li {
-    flex: 1 1 calc(50% - 10px); /* Each item takes up 50% of the container width */
-    background-color: #161b22; /* Dark background */
-    padding: 15px;
-    margin: 5px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+  }
+  
+  .about-item {
+    flex: 1 1 calc(50% - 10px);
+    background-color: var(--background-color);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    color: #8b949e; /* Muted text for readability */
-}
-
-/* Hover effect for each about item */
-.about ul li:hover {
-    transform: translateY(-5px); /* Move the block upwards */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
-}
-
-/* Styling for the strong (institution/organization name) in about section */
-.about ul li strong {
+  }
+  
+  .about-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px var(--hover-shadow);
+  }
+  
+  .about-item strong {
     display: block;
-    font-size: 1.2rem;
-    margin-bottom: 5px;
-    color: #58a6ff; /* Neon blue for titles */
-}
-
-/* Styling for the paragraph (description) inside each about item */
-.about ul li p {
-    font-size: 1rem;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+  }
+  
+  .about-item p {
+    font-size: 1.1rem;
     color: #8b949e;
-    line-height: 1.6;
-}
-
-/* Responsive Design */
-
-/* For mobile devices */
-@media (max-width: 768px) {
+    line-height: 1.7;
+  }
+  
+  @media (max-width: 768px) {
     .about ul {
-        flex-direction: column;
-        align-items: stretch;
+      flex-direction: column;
     }
-
-    .about ul li {
-        flex: 1 1 100%; /* Each item takes up 100% of the container width on mobile */
+  
+    .about-item {
+      flex: 1 1 100%;
     }
-
-    .about h2 {
-        font-size: 1.8rem;
-    }
-
-    .about ul li strong {
-        font-size: 1.2rem;
-    }
-
-    .about ul li p {
-        font-size: 0.9rem;
-    }
-}
-
-/* For tablets and medium devices */
-@media (max-width: 1024px) {
-    .about ul li {
-        flex: 1 1 calc(100% - 20px); /* Full width with margin for medium screens */
-    }
-
-    .about h2 {
-        font-size: 1.9rem;
-    }
-
-    .about ul li strong {
-        font-size: 1.2rem;
-    }
-
-    .about ul li p {
-        font-size: 1rem;
-    }
-}
+  }
+  
