@@ -7,14 +7,15 @@ const Projects = () => {
             <h2>Projects</h2>
             <ul>
                 <li>
-                    <strong>Real-Time Data Processing Framework</strong><br />
-                    GitHub: <a href="https://github.com/yourproject" target="_blank" rel="noopener noreferrer">github.com/yourproject</a><br />
-                    Contributed to an open-source framework for processing large-scale real-time data. Optimized data pipelines for better performance.
+                    <strong>PhaDOP framework</strong><br />
+                    GitHub: <a href="https://github.com/boubouthiamniang/tool-spl-dop-mde" target="_blank" rel="noopener noreferrer">github.com/boubouthiamniang/tool-spl-dop-mde</a><br />
+                    Demo: <a href="https://github.com/boubouthiamniang/PhaDOP-demo" target="_blank" rel="noopener noreferrer">github.com/boubouthiamniang/PhaDOP-demo</a><br />
+                    A Pharo framework for implementing software product lines using Delta-Oriented Programming and model-based engineering
                 </li>
                 <li>
-                    <strong>IoT Blockchain Protocol</strong><br />
-                    GitHub: <a href="https://github.com/iotblockchain" target="_blank" rel="noopener noreferrer">github.com/iotblockchain</a><br />
-                    Developed a lightweight blockchain protocol for secure IoT communications.
+                    <strong>Business Rule Migration System (BRMS) - IBM ODM to Drools use case</strong><br />
+                    GitHub: <a href="https://github.com/boubouthiamniang/ARLtoDrlMigration" target="_blank" rel="noopener noreferrer">github.com/boubouthiamniang/ARLtoDrlMigration</a><br />
+                    Comprehensive migration of BRMS from IBM ODM to Drools 
                 </li>
                 {/* Add more project entries as needed */}
             </ul>

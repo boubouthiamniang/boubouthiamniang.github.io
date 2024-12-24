@@ -64,3 +64,69 @@
     }
   }
   
+  /* Legend Styles */
+  .legend {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background-color: var(--background-color);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 180px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .legend-item span {
+    margin-left: 10px;
+    font-size: 1rem;
+    color: var(--text-color);
+  }
+  
+  /* Green Circle for Legend */
+  .green-circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: green;
+    border: 2px solid darkgreen;
+  }
+  
+  /* Green Empty Circle for Legend */
+  .green-empty-circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid green;
+    background-color: transparent;
+    margin-right: 2px;
+  }
+  
+  /* Blue Circle for Legend */
+  .blue-circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: blue;
+    border: 2px solid darkblue;
+  }
+  
+  /* Popup Styles */
+  .popup {
+    position: absolute;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: 1px solid black;
+    display: none;
+    pointer-events: none;
+    white-space: nowrap;
+    color: black;
+  }
+  
