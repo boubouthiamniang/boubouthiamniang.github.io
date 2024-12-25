@@ -2,125 +2,134 @@
 .teaching {
     margin-bottom: 40px;
     color: #c9d1d9; /* Soft white text */
+    padding: 20px;
 }
 
 /* Teaching section title */
 .teaching h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: #58a6ff; /* Neon blue for heading */
     margin-bottom: 20px;
     text-shadow: 0 0 8px #58a6ff; /* Glow effect */
+    text-align: center;
 }
 
 /* Year section title */
 .teaching h3 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: #58a6ff; /* Neon blue for year headings */
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-align: center;
 }
 
-/* Teaching list container */
-.teaching ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0;
-    margin: 0;
+/* Container for each year's courses */
+.year-section {
+    margin-bottom: 30px;
 }
 
-/* Individual teaching items */
-.teaching ul li {
-    flex: 1 1 calc(50% - 10px); /* Each item takes up 50% of the container width */
+/* List of courses for each year */
+.courses-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px;
+}
+
+/* Individual course card */
+.course-card {
     background-color: #161b22; /* Dark background */
-    padding: 15px;
-    margin: 5px;
-    border-radius: 8px;
+    padding: 20px;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     color: #8b949e; /* Muted text for readability */
 }
 
-/* Hover effect for teaching items */
-.teaching ul li:hover {
+/* Hover effect for course cards */
+.course-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
 }
 
-/* Title of each teaching item */
-.teaching ul li strong {
-    display: block;
+/* Course title and level-year */
+.course-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.course-header strong {
     font-size: 1.2rem;
-    margin-bottom: 5px;
     color: #58a6ff; /* Neon blue for the titles */
 }
 
-/* Teaching description */
-.teaching ul li p {
+.level-year {
+    font-size: 1rem;
+    color: #58a6ff;
+    font-style: italic;
+}
+
+/* Description of the course */
+.description {
     font-size: 1rem;
     color: #8b949e;
     line-height: 1.6;
+    margin-bottom: 10px;
 }
 
-/* Teaching hours styling */
-.teaching ul li p .hours {
-    display: inline-block; /* Ensure hours are inline */
-    margin-right: 15px; /* Add space between items */
-}
-
-.teaching ul li p strong {
+/* Styling for hours */
+.hours {
+    font-size: 1rem;
     color: #f39c12; /* Gold color for the hours */
+}
+
+.hours span {
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: 500;
 }
 
 /* Responsive Design */
 
 /* For mobile devices */
 @media (max-width: 768px) {
-    .teaching ul {
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    .teaching ul li {
-        flex: 1 1 100%; /* Each item takes up 100% of the container width on mobile */
-    }
-
     .teaching h2 {
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
 
     .teaching h3 {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
 
-    .teaching ul li strong {
-        font-size: 1.2rem;
+    .course-header strong {
+        font-size: 1.1rem;
     }
 
-    .teaching ul li p {
+    .description {
+        font-size: 0.9rem;
+    }
+
+    .hours {
         font-size: 0.9rem;
     }
 }
 
 /* For tablets and medium devices */
 @media (max-width: 1024px) {
-    .teaching ul li {
-        flex: 1 1 calc(100% - 20px); /* Full width with margin for medium screens */
+    .course-card {
+        padding: 15px;
     }
 
-    .teaching h2 {
-        font-size: 1.9rem;
+    .course-header strong {
+        font-size: 1.1rem;
     }
 
-    .teaching h3 {
-        font-size: 1.4rem;
+    .description {
+        font-size: 1rem;
     }
 
-    .teaching ul li strong {
-        font-size: 1.2rem;
-    }
-
-    .teaching ul li p {
+    .hours {
         font-size: 1rem;
     }
 }
