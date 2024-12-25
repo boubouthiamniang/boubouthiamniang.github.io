@@ -203,34 +203,33 @@ const About = () => {
         </li>
         {/* World Map with Visited Cities */}
         <li className="about-item">
-          <strong>Visited Countries, Cities, and Notable Natural Regions</strong>
+          <strong>Visited Countries/Cities, and Notable Natural Regions</strong>
           <div
             ref={mapRef}
             style={{ width: '100%', height: '400px', borderRadius: '12px' }}
           ></div>
+          <div className="legend-container">
+            <div className="legend-title">Legend</div>
+            <div className="legend">
+              <div className="legend-item">
+                <div className="blue-circle"></div>
+                <span>Visited Country/City</span>
+              </div>
+              <div className="legend-item">
+                <div className="green-circle"></div>
+                <span>Visited Notable Natural Location</span>
+              </div>
+              <div className="legend-item">
+                <div className="green-empty-circle"></div>
+                <span>Natural Locations to Visit</span>
+              </div>
+            </div>
+          </div>
           {/* Popup element */}
           <div
             ref={popupRef}
             className="popup"
           ></div>
-        </li>
-        <li className="about-item">
-            <strong>Legend</strong>
-            {/* Legend */}
-            <div className="legend">
-                <div className="legend-item">
-                <div className="blue-circle"></div>
-                <span>Visited Country/City</span>
-                </div>
-                <div className="legend-item">
-                <div className="green-circle"></div>
-                <span>Visited Notable Natural Location</span>
-                </div>
-                <div className="legend-item">
-                <div className="green-empty-circle"></div>
-                <span>Natural Locations to Visit</span>
-                </div>
-            </div>
         </li>
       </ul>
     </section>

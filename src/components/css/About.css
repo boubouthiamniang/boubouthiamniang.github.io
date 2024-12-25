@@ -3,30 +3,31 @@
     --background-color: #161b22;
     --text-color: #c9d1d9;
     --hover-shadow: rgba(0, 0, 0, 0.4);
-  }
-  
-  .about {
+    --highlight-color: #ff6347; /* Adding a highlight color for emphasis */
+}
+
+.about {
     margin-bottom: 40px;
     color: var(--text-color);
-  }
-  
-  .about h2 {
+}
+
+.about h2 {
     font-size: 2.5rem;
     color: var(--primary-color);
     margin-bottom: 20px;
     text-shadow: 0 0 8px var(--primary-color);
     text-align: left;
-  }
-  
-  .about ul {
+}
+
+.about ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0;
     margin: 0;
-  }
-  
-  .about-item {
+}
+
+.about-item {
     flex: 1 1 calc(50% - 10px);
     background-color: var(--background-color);
     padding: 20px;
@@ -34,99 +35,96 @@
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .about-item:hover {
+}
+
+.about-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px var(--hover-shadow);
-  }
-  
-  .about-item strong {
+}
+
+.about-item strong {
     display: block;
     font-size: 1.3rem;
     margin-bottom: 10px;
     color: var(--primary-color);
-  }
-  
-  .about-item p {
+}
+
+.about-item p {
     font-size: 1.1rem;
     color: #8b949e;
     line-height: 1.7;
-  }
-  
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
     .about ul {
-      flex-direction: column;
+        flex-direction: column;
     }
-  
+
     .about-item {
-      flex: 1 1 100%;
+        flex: 1 1 100%;
     }
-  }
-  
-  /* Legend Styles */
-  .legend {
+}
+
+/* Legend Styles */
+.legend-container {
     display: flex;
-    flex-direction: column;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    width: 100%;             /* Ensure it takes full width */
+    margin-top: 20px;        /* Optional: Adjust the margin */
+    position: relative;      /* Ensure it's placed correctly */
+    flex-direction: column;  /* Stack the title and legend items vertically */
+}
+
+.legend-title {
+    font-size: 1.3rem;
+    color: var(--primary-color); /* Use your primary color for the title */
+    font-weight: bold;
+    margin-bottom: 10px; /* Space between title and legend items */
+}
+
+.legend {
+    display: flex;
+    flex-direction: row; /* Change to row to display items inline */
+    justify-content: space-around; /* Distribute items evenly */
+    align-items: center;
     padding: 15px;
     background-color: var(--background-color);
     border: 1px solid #ccc;
     border-radius: 8px;
-    width: 180px;
-    margin-top: 20px;
+    width: 100%; /* Adjust the width to your needs */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  .legend-item {
+}
+
+.legend-item {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
-  }
-  
-  .legend-item span {
+    margin-right: 20px; /* Add space between items */
+}
+
+.legend-item span {
     margin-left: 10px;
     font-size: 1rem;
     color: var(--text-color);
-  }
-  
-  /* Green Circle for Legend */
-  .green-circle {
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-color: green;
-    border: 2px solid darkgreen;
-  }
-  
-  /* Green Empty Circle for Legend */
-  .green-empty-circle {
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    border: 2px solid green;
-    background-color: transparent;
-    margin-right: 2px;
-  }
-  
-  /* Blue Circle for Legend */
-  .blue-circle {
-    width: 15px;
-    height: 15px;
+}
+
+.blue-circle {
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
     background-color: blue;
-    border: 2px solid darkblue;
-  }
-  
-  /* Popup Styles */
-  .popup {
-    position: absolute;
-    background-color: white;
-    padding: 5px 10px;
-    border-radius: 4px;
-    border: 1px solid black;
-    display: none;
-    pointer-events: none;
-    white-space: nowrap;
-    color: black;
-  }
-  
+}
+
+.green-circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: green;
+}
+
+.green-empty-circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid green;
+}
