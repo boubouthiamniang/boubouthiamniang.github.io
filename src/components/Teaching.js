@@ -25,7 +25,12 @@ const Teaching = () => {
                                 <div className="course-card" key={index}>
                                     <div className="course-header">
                                         <strong>{course.ressource}</strong>
-                                        <span className="level-year">{course.level} - {course.year}</span>
+                                        <div className="level-semester-year">
+                                            <span>{course.level} - Semester {course.semester || "N/A"} - {course.year}</span>
+                                        </div>
+                                    </div>
+                                    <div className="department">
+                                        <strong>Department:</strong> {course.department || "N/A"}
                                     </div>
                                     <p className="description">{course.description}</p>
                                     <div className="hours">

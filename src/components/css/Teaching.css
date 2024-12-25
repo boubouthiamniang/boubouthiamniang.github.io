@@ -2,7 +2,6 @@
 .teaching {
     margin-bottom: 40px;
     color: #c9d1d9; /* Soft white text */
-    padding: 20px;
 }
 
 /* Teaching section title */
@@ -11,7 +10,7 @@
     color: #58a6ff; /* Neon blue for heading */
     margin-bottom: 20px;
     text-shadow: 0 0 8px #58a6ff; /* Glow effect */
-    text-align: center;
+    text-align: left;
 }
 
 /* Year section title */
@@ -20,7 +19,7 @@
     color: #58a6ff; /* Neon blue for year headings */
     margin-top: 30px;
     margin-bottom: 15px;
-    text-align: center;
+    text-align: left;
 }
 
 /* Container for each year's courses */
@@ -43,6 +42,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     color: #8b949e; /* Muted text for readability */
+    position: relative; /* Enable positioning for child elements */
 }
 
 /* Hover effect for course cards */
@@ -51,11 +51,8 @@
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
 }
 
-/* Course title and level-year */
+/* Course title */
 .course-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin-bottom: 10px;
 }
 
@@ -64,10 +61,17 @@
     color: #58a6ff; /* Neon blue for the titles */
 }
 
-.level-year {
+/* Level, Semester, and Year on a single line */
+.level-semester-year {
     font-size: 1rem;
-    color: #58a6ff;
+    color: #f39c12; /* Same color as CM, TD, TP, and Hours */
     font-style: italic;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.level-semester-year span {
+    margin-right: 5px; /* Spacing between elements */
 }
 
 /* Description of the course */
@@ -88,6 +92,20 @@
     display: inline-block;
     margin-right: 10px;
     font-weight: 500;
+    font-size: 0.75rem;
+}
+
+
+/* Department styling */
+.department {
+    font-size: 1rem;
+    color: #8b949e; /* Muted text color */
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.department strong {
+    color: #58a6ff; /* Neon blue for "Department" label */
 }
 
 /* Responsive Design */
@@ -113,6 +131,10 @@
     .hours {
         font-size: 0.9rem;
     }
+
+    .level-semester-year {
+        font-size: 0.9rem;
+    }
 }
 
 /* For tablets and medium devices */
@@ -130,6 +152,10 @@
     }
 
     .hours {
+        font-size: 1rem;
+    }
+
+    .level-semester-year {
         font-size: 1rem;
     }
 }
