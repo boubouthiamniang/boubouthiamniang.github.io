@@ -55,11 +55,35 @@ const Home = () => {
       {/* Extras Section */}
       <section className="extras">
         <h2 className="section-title">🔧 Tools I Love</h2>
-        <div className="tools-grid">
-          <div className="tool-item">🖥️ Python</div>
-          <div className="tool-item">⚙️ TensorFlow</div>
-          <div className="tool-item">🌐 React</div>
-          <div className="tool-item">📊 Jupyter</div>
+        
+        {/* Programming Languages */}
+        <div className="tools-category">
+          <h3 className="category-title">🖥️ Programming Languages</h3>
+          <div className="tools-grid">
+            <div className="tool-item"> Java</div>
+            <div className="tool-item"> Pharo</div>
+            <div className="tool-item"> Python</div>
+            <div className="tool-item"> JavaScript</div>
+          </div>
+        </div>
+
+        {/* Messaging Systems */}
+        <div className="tools-category">
+          <h3 className="category-title">⚙️Messaging Systems</h3>
+          <div className="tools-grid">
+            <div className="tool-item"> RabbitMQ</div>
+            <div className="tool-item"> Kafka</div>
+            <div className="tool-item"> Apache Camel</div>
+          </div>
+        </div>
+
+        {/* Electronics */}
+        <div className="tools-category">
+          <h3 className="category-title">📊 Things </h3>
+          <div className="tools-grid">
+            <div className="tool-item"> Arduino</div>
+            <div className="tool-item"> ESP32</div>
+          </div>
         </div>
       </section>
 
