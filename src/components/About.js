@@ -214,20 +214,21 @@ const About = () => {
             className="popup"
           ></div>
         </li>
-        <li>
+        <li className="about-item">
+            <strong>Legend</strong>
             {/* Legend */}
             <div className="legend">
                 <div className="legend-item">
-                    <div className="blue-circle"></div>
-                    <span>Visited Countries/Cities</span>
+                <div className="blue-circle"></div>
+                <span>Visited Country/City</span>
                 </div>
                 <div className="legend-item">
-                    <div className="green-circle"></div>
-                    <span>Visited Notable Natural Location</span>
+                <div className="green-circle"></div>
+                <span>Visited Notable Natural Location</span>
                 </div>
                 <div className="legend-item">
-                    <div className="green-empty-circle"></div>
-                    <span>Natural Locations to Visit</span>
+                <div className="green-empty-circle"></div>
+                <span>Natural Locations to Visit</span>
                 </div>
             </div>
         </li>

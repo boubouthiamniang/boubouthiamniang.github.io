@@ -12,6 +12,14 @@
     text-shadow: 0 0 8px #58a6ff; /* Glow effect */
 }
 
+/* Year section title */
+.teaching h3 {
+    font-size: 1.5rem;
+    color: #58a6ff; /* Neon blue for year headings */
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
 /* Teaching list container */
 .teaching ul {
     display: flex;
@@ -54,6 +62,16 @@
     line-height: 1.6;
 }
 
+/* Teaching hours styling */
+.teaching ul li p .hours {
+    display: inline-block; /* Ensure hours are inline */
+    margin-right: 15px; /* Add space between items */
+}
+
+.teaching ul li p strong {
+    color: #f39c12; /* Gold color for the hours */
+}
+
 /* Responsive Design */
 
 /* For mobile devices */
@@ -69,6 +87,10 @@
 
     .teaching h2 {
         font-size: 1.8rem;
+    }
+
+    .teaching h3 {
+        font-size: 1.3rem;
     }
 
     .teaching ul li strong {
@@ -88,6 +110,10 @@
 
     .teaching h2 {
         font-size: 1.9rem;
+    }
+
+    .teaching h3 {
+        font-size: 1.4rem;
     }
 
     .teaching ul li strong {
