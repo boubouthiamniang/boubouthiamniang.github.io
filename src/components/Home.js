@@ -58,7 +58,7 @@ const Home = () => {
         
         {/* Programming Languages */}
         <div className="tools-category">
-          <h3 className="category-title">🖥️ Programming Languages</h3>
+          <h3 className="category-title">🖥️ Languages</h3>
           <div className="tools-grid">
             <div className="tool-item"> Java</div>
             <div className="tool-item"> Pharo</div>
@@ -69,7 +69,7 @@ const Home = () => {
 
         {/* Messaging Systems */}
         <div className="tools-category">
-          <h3 className="category-title">⚙️Messaging Systems</h3>
+          <h3 className="category-title">⚙️ Messaging </h3>
           <div className="tools-grid">
             <div className="tool-item"> RabbitMQ</div>
             <div className="tool-item"> Kafka</div>
