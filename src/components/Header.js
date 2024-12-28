@@ -26,11 +26,13 @@ const Header = () => {
       <div className="header-content">
         <div className="branding">
           {/* Avatar Image */}
-          <img
-            src={avatar}
-            alt="Boubou Thiam Niang"
-            className="avatar"
-          />
+          <Link to="/">
+            <img
+              src={avatar}
+              alt="Boubou Thiam Niang"
+              className="avatar"
+            />
+          </Link>
           <div>
             <h1>Boubou Thiam Niang</h1>
             <h2>Ph.D. R&D Engineer in Software Engineering</h2>
