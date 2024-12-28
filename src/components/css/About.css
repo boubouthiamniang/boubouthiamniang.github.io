@@ -57,13 +57,17 @@
 
 @media (max-width: 768px) {
     .about ul {
-        flex-direction: column;
+      flex-direction: column;
     }
-
+  
     .about-item {
-        flex: 1 1 100%;
+      flex: 1 1 100%;
     }
-}
+  
+    .map-container {
+      height: 30vh;
+    }
+  }
 
 /* Legend Styles */
 .legend-container {
