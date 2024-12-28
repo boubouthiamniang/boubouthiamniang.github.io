@@ -15,9 +15,10 @@
 
 /* Styling for section headings (titles) */
 .experience h2, .education h2 {
-    font-size: 2rem;
-    color: #58a6ff; /* Neon blue for heading */
-    margin-bottom: 10px; /* Reduced margin to make it closer to the list */
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px; /* Reduced margin to make it closer to the list */
+    text-shadow: 0 0 8px var(--primary-color);
     text-align: left; /* Align title to the left */
 }
 

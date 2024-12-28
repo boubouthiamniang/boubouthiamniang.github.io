@@ -35,11 +35,12 @@ const Resume = () => {
                             <ul>
                                 <li>1st Year: Numerical Tools (Boolean Algebra, Truth Tables), Relational Database Design (UML Modeling, SQL)</li>
                                 <li>2nd Year: Algorithm and Programming (Python)</li>
+                                <li>3rd Year (Bachelor): Interoperability and Digital Hygiene</li>
                             </ul>
                             <li>Data Science Department</li>
                             <ul>
                                 <li>2nd Year: Object-Oriented Programming (Java), Numerical Tools (Boolean Algebra, Truth Tables)</li>
-                                <li>3rd Year: Web Programming for Data Visualization (JavaScript), Web Data Collection (HtmlUnit, Jsoup)</li>
+                                <li>3rd Year (Bachelor): Web Programming for Data Visualization (JavaScript), Web Data Collection (HtmlUnit, Jsoup)</li>
                             </ul>
                         </ul>
                     </li>
